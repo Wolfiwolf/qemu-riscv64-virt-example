@@ -3,6 +3,9 @@ build:
 	riscv64-unknown-elf-ld -T link.ld -o program.elf main.o
 
 run:
+	@echo ""
+	@echo "First press CTRL-A and after releasing press x to stop the program."
+	@echo ""
 	qemu-system-riscv64 -machine virt -bios program.elf -nographic
 
 clean:
