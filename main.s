@@ -50,7 +50,6 @@ print_str:
 	j .print_loop
 
 .print_end:
-
-	addi sp, sp, 8
+	addi sp, sp, 8 /* Clear the stack */
 
 	ret
